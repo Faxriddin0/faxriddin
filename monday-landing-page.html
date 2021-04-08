@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monday_landing-page.com</title>
+    <style>
+        /* color: #FFFFFF */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            background-color: #FFFFFF;
+        }
+        .conatiner_div{
+            width: 100%;
+            height: 780px;
+        }
+        .header_div{
+            width: 100%;
+            height: 150px;
+        }
+        img[alt="logo_monday3"]{
+            width: 17%;
+            margin: 3% 4%;
+            float: left;
+        }
+        /* img[alt="logo_monday3"]:hover{
+            cursor: pointer;
+        } */
+        li a{
+            text-decoration: none;
+            color: #8F8A9A;
+        }
+        li a:hover{
+            color: black;
+            text-shadow: 0px 0px 1px black;
+            transition: all 0.3s;
+        }
+        li{
+            float: left;
+            list-style-type: none;
+            margin: 60px 15px;
+            font-family: calibri;
+            font-size: 20px;
+        }
+        .li{
+            margin-left: 6%;
+            color: black;
+            font-size: 22px;
+            text-shadow: 0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black;
+        }
+        a[href="#Estimate_my_project"]{
+            color: #37B44C;
+            text-decoration: none;
+            border: 3px solid #37B44C;
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin: 50px;
+            position: absolute;
+            font-size: 20px;
+            font-family: calibri;
+            font-weight: bold;
+        }
+        a[href="#Estimate_my_project"]:hover{
+           background-color: #37B44C;
+           color: white;
+            transition: all 0.3s;
+        }
+        .conatiner_div2{
+            width: 50%;
+            height: 500px;
+            margin-left: 4%;
+            float: left;
+        }
+        img[alt="img1.jpg"]{
+            margin-top: 10px;
+            width: 580px;
+        }
+        .Have_h1{
+            font-family: calibri;
+            font-size: 50px;
+            margin-top: 70px;
+            margin-left: 80px;
+        }
+        .matn1_p{
+            font-family: calibri;
+            font-size: 25px;
+            margin-top: 70px;
+            color: #7D7987;
+            margin-left: 80px;
+        }
+        span{
+            margin-top: -10px;
+            position: absolute;
+        }
+        .Estimate_a{
+            margin-left: 80px;
+            text-decoration: none;
+            color: white;
+            background-color: #37B44C;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-family: calibri;
+            font-size: 23px;
+        }
+        .Estimate_a:hover{
+            border: 2px solid #37B44C;
+            background-color: white;
+            color: #37B44C;
+            transition: all 0.3s;
+            font-weight: bolder;
+            box-shadow: 2px 2px 5px #37B44C;
+        }
+
+        .section_div{
+            width: 100%;
+            min-height: 690px;
+            border-color: black;
+        }
+        .section1_h1{
+            font-family: calibri;
+            text-align: center;
+            font-size: 40px;
+        }
+        .border_div{
+            margin: auto;
+            width: 90px;
+            height: 3px;
+            margin-top: 30px;
+            background-color: black;
+            border-radius: 30px;
+        }
+        .matn2_p{
+            text-align: center;
+            color: #7D7987;
+            font-family: calibri;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .ketmaket_div{
+            margin-top: 80px;
+            margin-left: 50px;
+            width: 25%;
+            height: 350px;
+            border-radius: 20px;
+            float: left;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.096);
+        }
+        .ketmaket_div:hover{
+            cursor: pointer;
+            border: 10px solid #37B44C;
+            transition: all 0.3s;
+        }
+        .ketmaket_div:hover .matncha1_p:not(.two_p), .Building_h2:not(.bg){
+            cursor: pointer;
+        }
+        .left{
+            margin-left: 113px;
+        }
+        .bg:hover{
+            border: 2px solid green;
+            cursor: pointer;
+        }
+        .bg{
+            background-color: #37B44C;
+        }
+        img[alt="img/img2.jpg"]{
+            width: 120px;
+            margin: 20px;
+        }
+        .Building_h2{
+            font-family: calibri;
+            margin-left: 20px;
+            font-size: 27px;
+            color: white;   
+        }
+        .matncha1_p{
+            font-family: calibri;
+            margin-left: 20px;
+            padding-right: 17px;    
+            padding-top: 20px;
+            font-size: 16px;   
+            color: #7D7987; 
+        }
+        .two_h2{
+            font-family: calibri;
+            margin-left: 20px;
+            font-size: 25px;
+            color: white;
+        }
+        .two_p{
+            font-family: calibri;
+            margin-left: 20px;
+            padding-right: 17px;    
+            padding-top: 20px;
+            font-size: 17px;   
+            color: white;
+        }
+        .section2_div{
+            width: 100%;
+            height: 600px;
+        }
+        img[alt="img/img5.jpg"]{
+            width: 450px;
+            margin: 80px 120px;
+            float: left;
+        }
+        .matn_div{
+            margin-top: 180px;
+            position: absolute;
+            margin-left: 52%;
+            font-size: 27px;
+            font-family: calibri;
+        }
+        .ichidagi_p{
+            color: #7D7987;
+        }
+        .ichidagi_p2{
+            color: #455A64;
+        }
+
+        .conatiner_div3{
+            width: 100%;
+            height: 600px;
+            margin-top: 50px;
+        }
+        .bosh_h1, .bosh2_h1, .bosh3_h1{
+            float: left;
+            margin: 3px;
+            font-family: calibri;
+        }
+        .bosh_h1{
+            margin-left: 34%;
+        }
+        .maydachada_div{
+            width: 90px;
+            height: 3px;
+            margin: 80px 48%;            
+            background-color: black;
+            position: absolute;
+        }
+        .bosh2_h1{
+            color: #455A64;
+            font-size: 45px;
+            margin-top: -10px;
+        }
+        .bosh3_h1{
+            font-size: 23px;
+            margin-top: 10px;
+        }
+        .korinmas_div1{
+            width: 30%;
+            height: 400px;
+            float: left;
+            margin-left: -830px;
+            margin-top: 160px;
+        }        
+        .korinmas_div2{
+            width: 30%;
+            height: 400px;
+            float: left;
+            margin-left: -410px;
+            margin-top: 160px;
+        }
+        .korinmas_div3{
+            width: 30%;
+            height: 400px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 160px;
+        }
+        .green1_h2{
+            font-size: 30px;
+            font-family: calibri;
+            margin-left: 100px;
+            margin-top: -35px;
+            color: #37B44D;
+        }
+        .one_h2{
+            font-family: calibri;
+            font-size: 30px;
+        }
+        .index_p{
+            font-family: calibri;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #7D7987;
+            line-height: 28px
+        }
+        .dol_h1{
+            margin-top: 20px;
+            font-size: 50px;
+            font-family: calibri;
+            color: #484848;
+            float: left;
+        }
+        .to_p{
+            color: #484848;
+            font-family: calibri;
+            margin-top: 30px;
+            margin-left: 180px;
+            position: absolute;
+        }
+
+        .cointaner_div3{
+            width: 100%;
+            height: 600px;
+        }
+        .sarlavha_h1{
+            text-align: center;
+            font-family: calibri;
+            font-size: 38px;
+        }
+        .maydachada_mk{
+            width: 90px;
+            height: 3px;
+            background-color: black;
+            margin: auto;
+            margin-top: 35px;
+        }
+        img[alt="img/img6.jpg"]{
+            width: 750px;
+            margin-top: 70px;
+            margin-left: 40px;
+            float: left;
+        }
+        .matnlarniki_div{
+            width: 35%;
+            height: 400px;
+            margin: 60px 840px;
+        }
+        .Teck_h1{
+            font-family: calibri;
+            margin-top: 100px;
+        }
+        .as_p{
+            font-family: calibri;
+            font-size: 21px;
+            line-height: 32px;
+            margin-top: 30px;
+        }
+        a[href="#Learn"]{
+            text-decoration: none;
+            border: 2px solid #37B44D;
+            padding: 10px 40px;
+            border-radius: 20px;
+            color: #37B44C;
+            margin-top: 20px;
+            position: absolute;
+        }
+        a[href="#Learn"]:hover{
+            background-color: #37B44C;
+            transition: all 0.4s;
+            color: white;
+        }
+
+        .box_div{
+            width: 65%;
+            height: 220px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.281);
+            margin-top: 70px;
+            border-radius: 40px;
+        }
+        .cl1{
+            float: left;
+            margin-top: 40px;
+            margin-left: 32%;
+            font-family: calibri;
+        }
+        .cl2{
+            margin-top: 40px;
+            margin-left: 33%;
+            color: #37B44C;
+            position: absolute;
+            font-family: calibri;
+        }
+        a[href="#tp"]{
+            text-decoration: none;
+            background-color: #37B44C;
+            color: white;
+            font-family: calibri;
+            font-size: 17px;
+            box-shadow: 3px 3px 6px #37B44C;
+            border-radius: 30px;
+            padding: 15px 40px;
+            margin-left: -130px;
+            margin-top: 120px;
+            position: absolute;
+        }
+        .tp:hover{
+            background-color: white;
+            border: 2px solid #37B44C;
+            color: #37B44C;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .cointaner_div7{
+            width: 100%;
+            height: 600px;
+            margin-top: 140px;
+        }
+        .work{
+            font-family: calibri;
+            text-align: center;
+            font-size: 38px;
+        }
+        .anim{
+            width: 60px;
+            height: 3px;
+            background-color: black;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .sar{
+            font-family: calibri;
+            text-align: center;
+            margin-top: 27px;
+            color: #7D7987;
+            font-size: 18px;
+        }
+        img[alt="img/img10.jpg"]{
+            width: 50px;
+            margin: 90px 110px;
+            float: left;
+            cursor: pointer;
+        }
+        .call{
+            width: 40%;
+            height: 300px;
+            float: left;
+            margin: 170px -30px;
+        }
+        .step{
+            font-family: calibri;
+            font-size: 19px;
+        }
+        .cal{
+            font-family: calibri;
+            margin-top: 20px;
+            font-size: 35px;
+        }
+        .hare{
+            font-family: calibri;
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 15px;
+            color: #7D7987;
+        }
+        a[href="#next"]{
+            text-decoration: none;
+            color: #37B44C;
+            font-family: calibri;
+            padding: 10px 55px;
+            border: 2px solid #37B44C;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 30px;
+            position: absolute;
+        }
+        a[href="#next"]:hover{
+            background-color: #37B44C;
+            color: white;
+            transition: all 0.3s;
+        }
+        img[alt="img/img11.jpg"]{
+            margin: 50px 40px;
+        }
+
+        .qisqacha_div{
+            width: 100%;
+            height: 600px;
+            margin-top: 120px;
+        }
+
+        img[alt="img/img12.jpg"]{
+            float: left;
+            position: absolute;
+            margin: 70px -650px;
+        }
+        .text_div{
+            width: 40%;
+            height: 400px;
+            margin: 110px 720px;
+            position: absolute;
+        }
+        .ture{
+            font-family: calibri;
+            float: left;
+        }
+        .ture:nth-child(2){
+            margin-left: 15px;
+            color: #37B44C;
+        }
+        .mi{
+            position: absolute;
+            margin: 20px 0px; 
+        }
+        .mi2{
+            position: absolute;
+            margin: 20px 60px; 
+            color: #37B44C;
+        }
+        .we1{
+            margin-top: 90px;
+            font-family: calibri;
+            font-size: 21px;
+            line-height: 28px;
+            letter-spacing: 0.3px;
+            color: #7D7987;
+        }     
+        .we2{
+            margin-top: 20px;
+            font-family: calibri;
+            font-size: 21px;
+            line-height: 28px;
+            letter-spacing: 0.3px;
+            color: #7D7987;
+        }
+        a[href="#linear"]{
+            text-decoration: none;
+            color: #37B44C;
+            margin-top: 40px;
+            position: absolute;
+            padding: 13px 55px;
+            border-radius: 30px;
+            font-weight: bold;
+            border: 2px solid #37B44C;
+        }
+        a[href="#linear"]:hover{
+            background-color: #37B44C;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .ready{
+            width: 100%;
+            height: 310px;
+            background-color: #37B44C;
+            margin-top: 70px;
+        }
+        .ready2{
+            font-family: calibri;
+            font-size: 48px;
+            color: white;
+            margin: 80px 80px;
+            position: absolute;
+        }
+        .ready3{
+            font-family: calibri;
+            font-size: 48px;
+            color: white;
+            margin: 150px 80px;
+            position: absolute;
+        }
+        .al{
+            margin-left: 415px;
+            font-size: 30px;
+            font-family: cursive;
+            margin-top: 164px;
+        }
+        .al2{
+            margin-left: 480px;
+        }
+
+        .oxirgi_div{
+            width: 100%;
+            height: 700px;
+            margin-top: 120px;
+        }
+        .eat{
+            text-align: center;
+            font-family: calibri;
+            font-size: 35px;
+        }
+        .border{
+            margin: auto;
+            width: 60px;
+            height: 3px;
+            background-color: black;
+            margin-top: 25px;
+        }
+        .mav{
+            width: 25%;
+            height: 465px;
+            margin: 60px 30px;
+            float: left;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.137);
+        }
+        .bir{
+            margin-left: 110px;
+        }
+        img[alt="b1.jpg"]{
+            width: 338px;
+            border-radius: 19px 20px 0px 0px;
+        }
+        .dis{
+            font-size: 26px;
+            font-family: calibri;
+            line-height: 31px;
+            margin: 10px 20px;
+        }
+        .in{
+            color: #7D7987;
+            font-family: calibri;
+            line-height: 22px;
+            margin: 20px 20px;
+        }
+        a[href="#hr"]{
+            font-family: calibri;
+            color: #37B44C;
+            text-decoration: none;
+            margin: 2px 20px;
+        }
+        a[href="#hr"]:hover{
+            margin-left: 28px;
+            transition: all 0.3s;
+        }
+
+        .pos{
+            text-decoration: none;
+            padding: 15px 55px;
+            border: 2px solid #37B44C;
+            color: #37B44C;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-left: 590px;
+        }
+        .pos:hover{
+            background-color: #37B44C;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .input{
+            margin: 100px 0 0 0;
+            background-color: #37B44C;
+            width: 100%;
+            height: 340px;
+        }
+        img[alt="img/logo2.jpg"]{
+            width: 200px;
+            margin: 70px 70px;
+        }
+        .logomat1{
+            font-family: calibri;
+            margin: -50px 70px;
+            position: absolute;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: lighter;
+            line-height: 28px;
+        }
+        .logomatn2{
+            margin: 60px 70px;
+            font-family: calibri;
+            position: absolute;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        .menyu_div{
+            position: absolute;
+            width: 100px;
+            height: 220px;
+            margin: -100px 600px;
+            float: right;
+        }
+        .company{
+            font-family: calibri;
+            font-size: 25px;
+            color: white;
+        }
+        .about{
+            font-family: calibri;
+            font-size: 18px;
+            color: white;
+            font-weight: lighter;
+            margin-top: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .ch{
+            margin-top: 30px;
+        }
+        .about:hover{
+            color: black;
+            font-weight: bolder;
+            transition: all 0.2s;
+        }
+        .ale1{
+            margin-left: 850px;
+            width: 140px;
+        }
+        .ale2{
+            margin-left: 1090px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conatiner_div">
+        <div class="header_div">
+            <a href="monday-landing-page.html"><img src="img/logo_monday3.jpg" alt="logo_monday3"></a>
+            <li class="li"><a href="#">Home</a></li>   
+            <li><a href="#">About</a></li>   
+            <li><a href="#">Services</a></li>   
+            <li><a href="#">Portfolio</a></li>   
+            <li><a href="#">Resources</a></li>   
+            <li><a href="#">Contact us</a></li>
+            <a href="#Estimate_my_project">Estimate my project</a>   
+        </div>
+
+    <div class="conatiner_div2">
+            <h1 class="Have_h1">Have freedom<br><span> to innovate</span></h1>
+            <p class="matn1_p">We are a tech partner for those who want to innovate.<br>It's time for you to focus on growing your business <br>while we take care of building your software.<br><br>Let's talk about your project )</p>
+            <br>
+            <br>
+            <a href="#" class="Estimate_a">Estimate my project</a>            
+        </div>
+        <img src="img/img1.jpg" alt="img1.jpg">
+    </div>
+
+    <div class="section_div">
+        <h1 class="section1_h1">What is your challenge?</h1>
+        <div class="border_div"></div>
+        <p class="matn2_p">No matter if you want to build a new product, develop an existing one, or introduce Al to your business, we are here<br>to help tou. So what's your challenge?</p>
+        
+        <div class="ketmaket_div left">
+            <img src="img/img4.jpg" alt="img/img2.jpg">
+            <h2 class="Building_h2">Building a new product</h2>
+            <p class="matncha1_p">Build your app in a thoughtful manner! Going through the process of product design helps you save time and money</p>
+        </div>
+        <div class="ketmaket_div bg">
+            <img src="img/img3.jpg" alt="img/img2.jpg">
+            <h2 class="Building_h2 two_h2">Developing existing product</h2>
+            <p class="matncha1_p two_p">Your trusted web app development partner. WE will launch your web application 2-3 times faster than you expect.</p>
+        </div> 
+        <div class="ketmaket_div">
+            <img src="img/img2.jpg" alt="img/img2.jpg">
+            <h2 class="Building_h2">Implementing Alt</h2>
+            <p class="matncha1_p">Our Al development experts will help you use your data to improve efficiency and make smarter decisions</p>
+        </div>
+    </div>
+
+    <div class="section2_div">
+        <img src="img/img5.jpg" alt="img/img5.jpg">
+        <div class="matn_div">
+            <p class="ichidagi_p">No matter if you aim to build a new startup,<br> develop your product or implement Al, you <br>are probably considering two options of<br> covering the tech side of your business:<br><p class="ichidagi_p2"> building your internal team of develops <br> or outsourcing.</p></p>
+        </div>
+    </div>
+
+    <div class="conatiner_div3">
+        <h1 class="bosh_h1">Both options are <h1 class="bosh2_h1"> bad </h1> <h1 class="bosh3_h1"> and here is why:</h1></h1>
+        <div class="maydachada_div"></div>
+
+        <div class="korinmas_div1">
+            <h2 class="one_h2">Building an internal<br>team is <h2 class="green1_h2">expensive</h2></h2>
+            <p class="index_p">It costs $31,970 to hire one developer, according<br>to PayScale. This includes internal and external<br> costs such as in-house recruiting staff, office<br>work, advertising costs, third-party fees,<br> relocation fees, and training.</p>
+            <h1 class="dol_h1">$31,970</h1>
+            <p class="to_p">To hire<br>one developer</p>
+        </div>
+        <div class="korinmas_div2">
+            <h2 class="one_h2">Hiring developers is<br>there's<h2 class="green1_h2">time-consuming</h2></h2>
+            <p class="index_p">It costs $31,970 to hire one developer, according<br>to PayScale. This includes internal and external<br> costs such as in-house recruiting staff, office<br>work, advertising costs, third-party fees,<br> relocation fees, and training.</p>
+            <h1 class="dol_h1">42 DAYS</h1>
+            <p class="to_p">To fill<br>new tech position</p>
+        </div>
+        <div class="korinmas_div3">
+            <h2 class="one_h2">Outsourcing tech is<br> your ay <h2 class="green1_h2">high-risk</h2></h2>
+            <p class="index_p">It costs $31,970 to hire one developer, according<br>to PayScale. This includes internal and external<br> costs such as in-house recruiting staff, office<br>work, advertising costs, third-party fees,<br> relocation fees, and training.</p>
+            <h1 class="dol_h1">$25,000</h1>
+            <p class="to_p">Cost of custom<br>product development</p>
+        </div>
+    </div>
+
+    <div class="cointaner_div3">
+        <h1 class="sarlavha_h1">So, what's the alternative?</h1>
+        <div class="maydachada_mk"></div>
+        <img src="img/img7.jpg" alt="img/img6.jpg">
+        <div class="matnlarniki_div">
+            <h1 class="Teck_h1">Tech partnership</h1>
+            <p class="as_p">The tech partnership sets higher web development<br>standards than an average software development<br>agency, with developers taking responsibility for your<br>project, challenging your ideas & assumptions,<br>focusing on building the right features and testing <br>them with users, and acting as a genuine part of your<br>team.</p>
+            <a href="#Learn">Learn more</a>
+        </div>
+    </div>
+
+    <div class="box_div">
+        <h1 class="cl1">Do you like <h1 class="cl2">our work?</h1></h1>
+        <a href="#tp" class="tp">Let's talk about your project</a>
+    </div>
+
+    <div class="cointaner_div7">
+        <h1 class="work">How we work?</h1>
+        <div class="anim"></div>
+        <p class="sar">Know what to expect ahead of time - from the first call we have to launching  your prodict</p>
+        <img src="img/img10.jpg" alt="img/img10.jpg">
+        <div class="call">
+            <p class="step">Step 1</p>
+            <h1 class="cal">Call</h1>
+            <p class="hare">Share your challenges and project details with us during a 30-minute<br>explaratory caal with our team and receive an recommendations <br>how to proceed with your project.</p>
+            <a href="#next">Next step</a>
+        </div>
+        <img src="img/img11.jpg" alt="img/img11.jpg">
+    </div>
+    
+    <div class="qisqacha_div">
+        <img src="img/img12.jpg" alt="img/img12.jpg">
+        <div class="text_div">
+            <h1 class="ture">Culture of<h1 class="ture">freedom</h1><br><h1 class="ture mi">and</h1><h1 class="ture mi2">responsibility</h1></h1>
+            <p class="we1">We grow a culture of freedom and responsibility. With a <br> fundamental trust, we let our people make their own choices<br>and take full ownership of their goals.</p>
+            <p class="we2">We believe that your success is driven by the success of your<br>users, that's why we will challenge your assumptoins and<br>push you to test them with the market.</p>
+            <a href="#linear">Learn more</a>
+        </div>
+    </div>
+
+    <div class="ready">
+        <h1 class="ready2">Ready to develop your product?</h1>
+        <h1 class="ready3">Talk to our team <h1 class="ready3 al">and</h1> <h1 class="ready3 al2">schedule your workshop )</h1></h1>
+    </div>
+
+    <div class="oxirgi_div">
+        <h1 class="eat">Read our blog posts</h1>
+        <div class="border"></div>
+        
+        <div class="mav bir">
+            <img src="img/b1.jpg" alt="b1.jpg">
+            <h1 class="dis">Disease detection, check<br>up in the laboratory</h1>
+            <p class="in">In this case, the role of the helath<br>laboratory is very important to do<br>a disease detection...</p>
+            <a href="#hr">Read more  →</a>
+        </div>
+        <div class="mav ikki">
+            <img src="img/b2.jpg" alt="b1.jpg">
+            <h1 class="dis">Herbal medicines that are<br>safe for consumption</h1>
+            <p class="in">Herbal medicine is very widely used<br>at this time because of its very good<br>for your health...</p>
+            <a href="#hr">Read more  →</a>
+        </div>
+        <div class="mav uch">
+            <img src="img/b3.jpg" alt="b1.jpg">
+            <h1 class="dis">Natural care for healthy<br>facial skin</h1>
+            <p class="in">A healthy lifestyle should start from<br>now and also for your skin health.<br>There are some...</p>
+            <a href="#hr">Read more  →</a>
+        </div>
+    </div>
+    
+    <a href="#" class="pos">View all</a>
+
+    <div class="input">
+        <img src="img/logo2.jpg" alt="img/logo2.jpg">
+        <p class="logomat1">We are a tech partner for those who want to innovate.<br>It's time for you to focus on growing your business<br>while we take care of building your software.</p>
+        <p class="logomatn2">© Monday Labs LLC 2020. All rights reserved</p>
+        <div class="menyu_div">
+            <p class="company">Company</p>
+            <a href="#" class="about ch">About</a>
+            <a href="#" class="about">Testimonials</a>
+            <a href="#" class="about">Portfolio</a>
+            <a href="#" class="about">Services</a>
+        </div>                                                            
+        <div class="menyu_div ale1">                                                            
+            <p class="company">Help</p>                                                            
+            <a href="#" class="about ch">Help center</a>                                                              
+            <a href="#" class="about">Contact support</a>                                                              
+            <a href="#" class="about">Instructions</a>                                                              
+            <a href="#" class="about">How it works</a>                                                              
+        </div>                                                            
+        <div class="menyu_div ale2">                                                              
+            <p class="company">Contacts</p>                                                              
+            <a  href="#" class="about ch">+ 1 320 320 20 20</a>                                                              
+            <a  href="#" class="about">info@mondaylabs.tech</a>                                                              
+            <a  href="#" class="about">Formdale Ave 159,</a>                                                              
+            <a  href="#" class="about">Los Angeles, CA, USA</a>                                                              
+        </div>                                                            
+    </div>                                                            
+</body>                                                            
+</html>                                                            
